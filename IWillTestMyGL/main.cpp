@@ -5,8 +5,6 @@
 
 void OnInit()
 {
-	GLVertexShader* vsh = new GLVertexShader("AAA");
-	GLFragmentShader* psh = new GLFragmentShader("BBB");
 }
 
 void OnRendering()
