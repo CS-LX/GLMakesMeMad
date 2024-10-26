@@ -16,8 +16,8 @@ public:
     GLFragmentShader* fragmentShader;
 
     GLShader(const char* vertexShaderCode, const char* fragmentShaderCode);
-    GLShader(std::string& vertexShaderCode, std::string& fragmentShaderCode);
-    static GLShader* Load(std::string& vshPath, std::string& pshPath);
+    GLShader(const std::string& vertexShaderCode, const std::string& fragmentShaderCode);
+    static GLShader* Load(const std::string& vshPath, const std::string& pshPath);
 
     // Îö¹¹º¯Êý
     ~GLShader();

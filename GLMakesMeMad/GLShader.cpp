@@ -43,12 +43,12 @@ GLShader::GLShader(const char* vertexShaderCode, const char* fragmentShaderCode)
     GLShader::Init(vertexShaderCode, fragmentShaderCode);
 }
 
-GLShader::GLShader(std::string& vertexShaderCode, std::string& fragmentShaderCode)
+GLShader::GLShader(const std::string& vertexShaderCode, const std::string& fragmentShaderCode)
 {
     GLShader::Init(vertexShaderCode.c_str(), fragmentShaderCode.c_str());
 }
 
-GLShader* GLShader::Load(std::string& vshPath, std::string& pshPath)
+GLShader* GLShader::Load(const std::string& vshPath, const std::string& pshPath)
 {
     const char* vsh = ReadFile(vshPath);
     const char* psh = ReadFile(pshPath);
