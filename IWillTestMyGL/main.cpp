@@ -1,9 +1,12 @@
 #include "GLWindow.h"
+#include "GLVertexShader.h"
+#include "GLFragmentShader.h"
 
 
 void OnInit()
 {
-
+	GLVertexShader* vsh = new GLVertexShader("AAA");
+	GLFragmentShader* psh = new GLFragmentShader("BBB");
 }
 
 void OnRendering()
