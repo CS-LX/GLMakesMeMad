@@ -2,8 +2,12 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <vector>
 
 GLFWwindow* window;
+std::vector<GLWindow::EventCallback> onInitCallbacks;
+std::vector<GLWindow::EventCallback> renderingCallbacks;
+std::vector<GLWindow::EventCallback> closingCallbacks;
 
 void FramebufferSizeCallback(GLFWwindow* window, int width, int height)
 {
@@ -40,17 +44,53 @@ int GLWindow::Init(int width, int height, const std::string& windowName)
     // 设置帧缓冲大小回调
     glfwSetFramebufferSizeCallback(window, FramebufferSizeCallback);
 
+    for (auto& callback : onInitCallbacks) {
+        callback();
+    }
+
     return 0;
 }
 
 void GLWindow::Render()
 {
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);//清除深度缓冲
+
+    for (auto& callback : renderingCallbacks) {
+        callback();
+    }
+
     glfwSwapBuffers(window);
     glfwPollEvents();
 }
 
 void GLWindow::Close()
 {
+    for (auto& callback : closingCallbacks) {
+        callback();
+    }
+
     glfwDestroyWindow(window); // 销毁窗口
     glfwTerminate();           // 终止GLFW
+}
+
+bool GLWindow::ShouldClose()
+{
+    return glfwWindowShouldClose(window);
+}
+
+void GLWindow::RegisterOnInit(EventCallback callback)
+{
+    onInitCallbacks.push_back(callback);
+}
+
+void GLWindow::RegisterOnRendering(EventCallback callback)
+{
+    renderingCallbacks.push_back(callback);
+}
+
+void GLWindow::RegisterOnClosing(EventCallback callback)
+{
+    closingCallbacks.push_back(callback);
 }
