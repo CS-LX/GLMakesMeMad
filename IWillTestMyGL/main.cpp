@@ -1,6 +1,7 @@
 #include "GLWindow.h"
 #include "GLShader.h"
 #include "GLMesh.h"
+#include "Vector3.h"
 
 
 GLShader* shader;
@@ -8,7 +9,6 @@ GLMesh* mesh;
 void OnInit()
 {
 	shader = GLShader::Load("VertexShader.vsh", "FragmentShader.psh");
-
 	float vertices[] = {
 		-0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,  0.0f, 0.0f, 1.0f,  0.0f, 0.0f,
 		-0.5f,  0.5f, 0.0f,  0.0f, 1.0f, 1.0f,  0.0f, 0.0f, 1.0f,  0.0f, 1.0f,
