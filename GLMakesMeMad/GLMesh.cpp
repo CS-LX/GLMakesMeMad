@@ -7,11 +7,34 @@ GLMesh::GLMesh(const std::vector<float>& vertices, const std::vector<unsigned in
 	Initialize(vertices.data(), vertices.size(), indices.data(), indices.size());
 }
 
+GLMesh::GLMesh(const std::vector<GLVertex>& vertices, const std::vector<unsigned int>& indices)
+{
+	std::vector<float> verticesRaw;
+	for (auto& v : vertices)
+	{
+		verticesRaw.push_back(v.Position.x);
+		verticesRaw.push_back(v.Position.y);
+		verticesRaw.push_back(v.Position.z);
+		verticesRaw.push_back(v.VertexColor.r);
+		verticesRaw.push_back(v.VertexColor.g);
+		verticesRaw.push_back(v.VertexColor.b);
+		verticesRaw.push_back(v.VertexColor.a);
+		verticesRaw.push_back(v.Normal.x);
+		verticesRaw.push_back(v.Normal.y);
+		verticesRaw.push_back(v.Normal.z);
+		verticesRaw.push_back(v.TextureCoordinate.x);
+		verticesRaw.push_back(v.TextureCoordinate.y);
+	}
+	Initialize(verticesRaw.data(), verticesRaw.size(), indices.data(), indices.size());
+}
+
 // 构造函数，使用 C 风格数组
 GLMesh::GLMesh(const float vertices[], unsigned int verticesCount, const unsigned int indices[], unsigned int indicesCount)
 {
 	Initialize(vertices, verticesCount, indices, indicesCount);
 }
+
+
 
 
 void GLMesh::Flush() const
@@ -51,16 +74,16 @@ void GLMesh::Initialize(const float vertices[], unsigned int verticesCount, cons
 
 	// 假设每个顶点有3个float坐标，glVertexAttribPointer第一个参数n对应vsh里面layout (location = n)
 	// 位置属性
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 11 * sizeof(float), (void*)0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 12 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
 	// 颜色属性
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 11 * sizeof(float), (void*)(3 * sizeof(float)));
+	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 12 * sizeof(float), (void*)(3 * sizeof(float)));
 	glEnableVertexAttribArray(1);
 	// 顶点法向
-	glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 11 * sizeof(float), (void*)(6 * sizeof(float)));
+	glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 12 * sizeof(float), (void*)(3 + 4 * sizeof(float)));
 	glEnableVertexAttribArray(2);
 	// 纹理坐标
-	glVertexAttribPointer(3, 2, GL_FLOAT, GL_FALSE, 11 * sizeof(float), (void*)(9 * sizeof(float)));
+	glVertexAttribPointer(3, 2, GL_FLOAT, GL_FALSE, 12 * sizeof(float), (void*)(3 + 4 + 3 * sizeof(float)));
 	glEnableVertexAttribArray(3);
 
 	// 解绑 VAO

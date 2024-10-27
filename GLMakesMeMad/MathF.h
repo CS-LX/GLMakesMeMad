@@ -4,7 +4,7 @@
 #else
 #define DLL_API __declspec(dllimport)
 #endif
-static class DLL_API MathF
+class DLL_API MathF
 {
 public:
 	static int Clamp(int x, int min, int max);

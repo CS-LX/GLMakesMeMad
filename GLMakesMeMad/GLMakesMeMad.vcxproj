@@ -150,6 +150,7 @@
     <ClInclude Include="GLFragmentShader.h" />
     <ClInclude Include="GLMesh.h" />
     <ClInclude Include="GLShader.h" />
+    <ClInclude Include="GLVertex.h" />
     <ClInclude Include="GLVertexShader.h" />
     <ClInclude Include="GLWindow.h" />
     <ClInclude Include="MathF.h" />
@@ -164,6 +165,7 @@
     <ClCompile Include="GLFragmentShader.cpp" />
     <ClCompile Include="GLMesh.cpp" />
     <ClCompile Include="GLShader.cpp" />
+    <ClCompile Include="GLVertex.cpp" />
     <ClCompile Include="GLVertexShader.cpp" />
     <ClCompile Include="GLWindow.cpp" />
     <ClCompile Include="MathF.cpp" />

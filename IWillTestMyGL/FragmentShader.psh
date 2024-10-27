@@ -4,10 +4,10 @@ out vec4 FragColor;
 
 //顶点信息
 in vec2 TexCoord;
-in vec3 VerColor;
+in vec4 VerColor;
 in vec3 VerNormal;
 
 void main()
 {
-    FragColor = vec4(VerColor, 1.0);
+    FragColor = VerColor;
 }

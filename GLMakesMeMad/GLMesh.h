@@ -4,6 +4,7 @@
 #define DLL_API __declspec(dllimport)
 #endif
 #include <vector>
+#include "GLVertex.h"
 
 class DLL_API GLMesh {
 public:
@@ -12,6 +13,9 @@ public:
 
 	// 构造函数，使用 std::vector
 	GLMesh(const std::vector<float>& vertices, const std::vector<unsigned int>& indices);
+
+	// 使用顶点类构造函数
+	GLMesh(const std::vector<GLVertex>& vertices, const std::vector<unsigned int>& indices);
 
 	// 构造函数，使用 C 风格数组
 	GLMesh(const float vertices[], unsigned int verticesCount, const unsigned int indices[], unsigned int indicesCount);

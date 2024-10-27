@@ -1,6 +1,11 @@
 #include "Color.h"
 #include "MathF.h"
 
+Color::Color()
+{
+	Init(0.0f, 0.0f, 0.0f, 0.0f);
+}
+
 Color::Color(float r, float g, float b, float a)
 {
 	Init(r, g, b, a);
@@ -31,7 +36,7 @@ Color::Color(int r, int g, int b)
 void Color::Init(float r, float g, float b, float a)
 {
 	this->r = r;
-	this->g = r;
-	this->b = r;
-	this->a = r;
+	this->g = g;
+	this->b = b;
+	this->a = a;
 }
