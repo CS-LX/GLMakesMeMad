@@ -11,4 +11,13 @@
     <ProjectReference Include="..\CLITestsMyGL\CLITestsMyGL.vcxproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="FragmentShader.psh">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="VertexShader.vsh">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

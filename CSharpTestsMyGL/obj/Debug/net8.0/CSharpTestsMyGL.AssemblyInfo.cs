@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSharpTestsMyGL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03d960f076be9694590c8b6a45cd4e92926899be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa3c61b8d38cef2f2cd4e9d106adadf551ef7881")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSharpTestsMyGL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSharpTestsMyGL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
