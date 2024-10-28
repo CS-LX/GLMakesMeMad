@@ -117,13 +117,13 @@ void GLShader::SetFloat(const std::string& name, float value) const
 {
     glUniform1f(GetUniformLocation(name), value);
 }
-void GLShader::SetVector2(const std::string& name, float x, float y) const
+void GLShader::SetVector2(const std::string& name, Vector2 vector2) const
 {
-    glUniform2f(GetUniformLocation(name), x, y);
+    glUniform2f(GetUniformLocation(name), vector2.x, vector2.y);
 }
-void GLShader::SetVector3(const std::string& name, float x, float y, float z) const
+void GLShader::SetVector3(const std::string& name, Vector3 vector3) const
 {
-    glUniform3f(GetUniformLocation(name), x, y, z);
+    glUniform3f(GetUniformLocation(name), vector3.x, vector3.y, vector3.z);
 }
 void GLShader::SetVector4(const std::string& name, float x, float y, float z, float w) const
 {

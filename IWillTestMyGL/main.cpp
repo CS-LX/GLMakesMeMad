@@ -3,7 +3,7 @@
 #include "GLMesh.h"
 #include "Vector3.h"
 #include "GLVertex.h"
-
+#include <iostream>
 
 GLShader* shader;
 GLMesh* mesh;
@@ -35,12 +35,10 @@ void OnClosing()
 
 void OnMouseMoving(float xPos, float yPos)
 {
-	printf("mouse %f, %f\n", xPos, yPos);
 }
 
 void OnScrollRolling(float xOffset, float yOffset)
 {
-	printf("scroll %f, %f\n", xOffset, yOffset);
 }
 
 int main()

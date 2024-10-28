@@ -3,8 +3,10 @@
 #else
 #define DLL_API __declspec(dllimport)
 #endif
-#include "GLVertexShader.h";
+#include "GLVertexShader.h"
 #include "GLFragmentShader.h"
+#include "Vector3.h"
+#include "Vector2.h"
 #include <string>
 
 #pragma once
@@ -28,8 +30,8 @@ public:
     void SetBool(const std::string& name, bool value) const;
     void SetInt(const std::string& name, int value) const;
     void SetFloat(const std::string& name, float value) const;
-    void SetVector2(const std::string& name, float x, float y) const;
-    void SetVector3(const std::string& name, float x, float y, float z) const;
+    void SetVector2(const std::string& name, Vector2 vector2) const;
+    void SetVector3(const std::string& name, Vector3 vector3) const;
     void SetVector4(const std::string& name, float x, float y, float z, float w) const;
     void SetMatrix(const std::string& name, float* value);
 
