@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ReferencePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</ReferencePath>
-    <LibraryPath>F:\CPP Projects\OpenGL Dependents\Lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>F:\CPP Projects\OpenGL Dependents\Includes;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)OpenGL Dependents\Lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)OpenGL Dependents\Includes;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
