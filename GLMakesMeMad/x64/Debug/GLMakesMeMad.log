@@ -1,15 +1,1 @@
-﻿  GLWindow.cpp
-F:\CPP Projects\GLMakesMeMad\GLMakesMeMad\GLWindow.cpp(13,15): warning C4273: “GLWindow::Init”: dll 链接不一致
-  F:\CPP Projects\GLMakesMeMad\GLMakesMeMad\GLWindow.h(14,16):
-  参见“Init”的前一个定义
-  
-F:\CPP Projects\GLMakesMeMad\GLMakesMeMad\GLWindow.cpp(46,16): warning C4273: “GLWindow::Render”: dll 链接不一致
-  F:\CPP Projects\GLMakesMeMad\GLMakesMeMad\GLWindow.h(15,17):
-  参见“Render”的前一个定义
-  
-F:\CPP Projects\GLMakesMeMad\GLMakesMeMad\GLWindow.cpp(52,16): warning C4273: “GLWindow::Close”: dll 链接不一致
-  F:\CPP Projects\GLMakesMeMad\GLMakesMeMad\GLWindow.h(16,17):
-  参见“Close”的前一个定义
-  
-    正在创建库 F:\CPP Projects\GLMakesMeMad\x64\Debug\GLMakesMeMad.lib 和对象 F:\CPP Projects\GLMakesMeMad\x64\Debug\GLMakesMeMad.exp
-  GLMakesMeMad.vcxproj -> F:\CPP Projects\GLMakesMeMad\x64\Debug\GLMakesMeMad.dll
+﻿  GLMakesMeMad.vcxproj -> F:\CPP Projects\GLMakesMeMad\x64\Debug\GLMakesMeMad.dll

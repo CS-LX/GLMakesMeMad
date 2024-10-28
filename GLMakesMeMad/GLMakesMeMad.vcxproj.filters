@@ -19,6 +19,12 @@
     <Filter Include="源文件\GL">
       <UniqueIdentifier>{d6a6dd7f-3c30-467c-88b9-055b8c997300}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Math">
+      <UniqueIdentifier>{e9cf6646-10c2-4748-83b5-b66be78480e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Math">
+      <UniqueIdentifier>{78cdd568-28e0-4a9d-a274-a5225f183b67}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -28,6 +34,33 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="GLWindow.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GLVertexShader.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GLFragmentShader.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GLShader.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GLMesh.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="MathF.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="GLVertex.h">
       <Filter>头文件\GL</Filter>
     </ClInclude>
   </ItemGroup>
@@ -42,6 +75,33 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="GLWindow.cpp">
+      <Filter>源文件\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="GLVertexShader.cpp">
+      <Filter>源文件\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="GLFragmentShader.cpp">
+      <Filter>源文件\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="GLShader.cpp">
+      <Filter>源文件\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="GLMesh.cpp">
+      <Filter>源文件\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="MathF.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="GLVertex.cpp">
       <Filter>源文件\GL</Filter>
     </ClCompile>
   </ItemGroup>

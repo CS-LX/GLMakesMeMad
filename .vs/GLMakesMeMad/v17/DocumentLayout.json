@@ -7,12 +7,92 @@
       "RelativeMoniker": "D:0:0:{7755C094-FA62-473E-8DDD-128A84B76205}|IWillTestMyGL\\IWillTestMyGL.vcxproj|solutionrelative:IWillTestMyGL\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\GLWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLMesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\GLMesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Color.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\Color.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Color.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\Color.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLVertex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\GLVertex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLMesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\GLMesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMAKESMEMAD\\GLSHADER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMAKESMEMAD\\GLSHADER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLVertexShader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\GLVertexShader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Vector3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\Vector3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Vector2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\Vector2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLVertex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\GLVertex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Vector3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\Vector3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Vector2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\Vector2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\MathF.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\MathF.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\GLWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\MathF.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\MathF.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7755C094-FA62-473E-8DDD-128A84B76205}|IWillTestMyGL\\IWillTestMyGL.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\IWillTestMyGL\\VertexShader.vsh||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7755C094-FA62-473E-8DDD-128A84B76205}|IWillTestMyGL\\IWillTestMyGL.vcxproj|solutionrelative:IWillTestMyGL\\VertexShader.vsh||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLShader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\GLShader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLVertexShader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\GLVertexShader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLFragmentShader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\GLFragmentShader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLFragmentShader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\GLFragmentShader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\GLWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -23,9 +103,6 @@
       "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP PROJECTS\\OPENGL DEPENDENTS\\INCLUDES\\GLAD\\GLAD.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\glad.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\glad.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -34,8 +111,7 @@
       "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DB67B7C8-F115-4BCB-B99C-D0B190CDB7D6}|GLMakesMeMad\\GLMakesMeMad.vcxproj|solutionrelative:GLMakesMeMad\\framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\CPP Projects\\OpenGL Dependents\\Includes\\glad\\glad.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,7 +121,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,72 +137,272 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GLMesh.cpp",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLMesh.cpp",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\GLMesh.cpp",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLMesh.cpp",
+              "RelativeToolTip": "GLMakesMeMad\\GLMesh.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-26T15:31:16.29Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\IWillTestMyGL\\main.cpp",
               "RelativeDocumentMoniker": "IWillTestMyGL\\main.cpp",
               "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\IWillTestMyGL\\main.cpp",
               "RelativeToolTip": "IWillTestMyGL\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-26T14:02:39.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "glad.h",
-              "DocumentMoniker": "F:\\CPP Projects\\OpenGL Dependents\\Includes\\glad\\glad.h",
-              "RelativeDocumentMoniker": "..\\OpenGL Dependents\\Includes\\glad\\glad.h",
-              "ToolTip": "F:\\CPP Projects\\OpenGL Dependents\\Includes\\glad\\glad.h",
-              "RelativeToolTip": "..\\OpenGL Dependents\\Includes\\glad\\glad.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAHAAAA",
+              "DocumentIndex": 6,
+              "Title": "GLShader.h",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLShader.h",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\GLShader.h",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLShader.h",
+              "RelativeToolTip": "GLMakesMeMad\\GLShader.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-26T13:46:42.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T14:53:23.352Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GLWindow.cpp",
-              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLWindow.cpp",
-              "RelativeDocumentMoniker": "GLMakesMeMad\\GLWindow.cpp",
-              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLWindow.cpp",
-              "RelativeToolTip": "GLMakesMeMad\\GLWindow.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-26T13:38:56.869Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "GLMesh.h",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLMesh.h",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\GLMesh.h",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLMesh.h",
+              "RelativeToolTip": "GLMakesMeMad\\GLMesh.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-27T08:35:32.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Color.h",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Color.h",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\Color.h",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Color.h",
+              "RelativeToolTip": "GLMakesMeMad\\Color.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-27T08:43:47.19Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Color.cpp",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Color.cpp",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\Color.cpp",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Color.cpp",
+              "RelativeToolTip": "GLMakesMeMad\\Color.cpp",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-27T08:47:58.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GLVertexShader.cpp",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLVertexShader.cpp",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\GLVertexShader.cpp",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLVertexShader.cpp",
+              "RelativeToolTip": "GLMakesMeMad\\GLVertexShader.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-26T14:47:01.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GLVertex.h",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLVertex.h",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\GLVertex.h",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLVertex.h",
+              "RelativeToolTip": "GLMakesMeMad\\GLVertex.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-27T08:58:39.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Vector3.cpp",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Vector3.cpp",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\Vector3.cpp",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Vector3.cpp",
+              "RelativeToolTip": "GLMakesMeMad\\Vector3.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-27T08:34:34.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Vector2.cpp",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Vector2.cpp",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\Vector2.cpp",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Vector2.cpp",
+              "RelativeToolTip": "GLMakesMeMad\\Vector2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-27T08:37:32.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GLVertex.cpp",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLVertex.cpp",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\GLVertex.cpp",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLVertex.cpp",
+              "RelativeToolTip": "GLMakesMeMad\\GLVertex.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-27T09:02:29.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Vector3.h",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Vector3.h",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\Vector3.h",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Vector3.h",
+              "RelativeToolTip": "GLMakesMeMad\\Vector3.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-27T08:33:08.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Vector2.h",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Vector2.h",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\Vector2.h",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\Vector2.h",
+              "RelativeToolTip": "GLMakesMeMad\\Vector2.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-27T08:36:36.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MathF.h",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\MathF.h",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\MathF.h",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\MathF.h",
+              "RelativeToolTip": "GLMakesMeMad\\MathF.h",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-27T08:49:39.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "GLWindow.h",
               "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLWindow.h",
               "RelativeDocumentMoniker": "GLMakesMeMad\\GLWindow.h",
               "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLWindow.h",
               "RelativeToolTip": "GLMakesMeMad\\GLWindow.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-26T13:38:38.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T13:38:38.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "glad.c",
-              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\glad.c",
-              "RelativeDocumentMoniker": "GLMakesMeMad\\glad.c",
-              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\glad.c",
-              "RelativeToolTip": "GLMakesMeMad\\glad.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-10-26T13:36:23.021Z",
-              "EditorCaption": ""
+              "DocumentIndex": 15,
+              "Title": "MathF.cpp",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\MathF.cpp",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\MathF.cpp",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\MathF.cpp",
+              "RelativeToolTip": "GLMakesMeMad\\MathF.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-27T08:50:20.821Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
+              "Title": "GLShader.cpp",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLShader.cpp",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\GLShader.cpp",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLShader.cpp",
+              "RelativeToolTip": "GLMakesMeMad\\GLShader.cpp",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-26T14:55:27.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "VertexShader.vsh",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\IWillTestMyGL\\VertexShader.vsh",
+              "RelativeDocumentMoniker": "IWillTestMyGL\\VertexShader.vsh",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\IWillTestMyGL\\VertexShader.vsh",
+              "RelativeToolTip": "IWillTestMyGL\\VertexShader.vsh",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-26T15:36:42.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GLVertexShader.h",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLVertexShader.h",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\GLVertexShader.h",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLVertexShader.h",
+              "RelativeToolTip": "GLMakesMeMad\\GLVertexShader.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-26T14:46:00.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GLFragmentShader.h",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLFragmentShader.h",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\GLFragmentShader.h",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLFragmentShader.h",
+              "RelativeToolTip": "GLMakesMeMad\\GLFragmentShader.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-26T14:49:31.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GLFragmentShader.cpp",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLFragmentShader.cpp",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\GLFragmentShader.cpp",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLFragmentShader.cpp",
+              "RelativeToolTip": "GLMakesMeMad\\GLFragmentShader.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-26T14:50:15.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GLWindow.cpp",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLWindow.cpp",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\GLWindow.cpp",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\GLWindow.cpp",
+              "RelativeToolTip": "GLMakesMeMad\\GLWindow.cpp",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAF8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-26T13:38:56.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "pch.h",
               "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\pch.h",
               "RelativeDocumentMoniker": "GLMakesMeMad\\pch.h",
@@ -134,12 +410,23 @@
               "RelativeToolTip": "GLMakesMeMad\\pch.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-26T13:34:52.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T13:34:52.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 25,
+              "Title": "glad.c",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\glad.c",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\glad.c",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\glad.c",
+              "RelativeToolTip": "GLMakesMeMad\\glad.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-10-26T13:36:23.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "pch.cpp",
               "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\pch.cpp",
               "RelativeDocumentMoniker": "GLMakesMeMad\\pch.cpp",
@@ -147,25 +434,11 @@
               "RelativeToolTip": "GLMakesMeMad\\pch.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-26T13:34:49.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T13:34:49.947Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "dllmain.cpp",
-              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\dllmain.cpp",
-              "RelativeDocumentMoniker": "GLMakesMeMad\\dllmain.cpp",
-              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\dllmain.cpp",
-              "RelativeToolTip": "GLMakesMeMad\\dllmain.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-26T13:34:31.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "framework.h",
               "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\framework.h",
               "RelativeDocumentMoniker": "GLMakesMeMad\\framework.h",
@@ -173,8 +446,31 @@
               "RelativeToolTip": "GLMakesMeMad\\framework.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-26T13:34:52.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T13:34:52.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "glad.h",
+              "DocumentMoniker": "F:\\CPP Projects\\OpenGL Dependents\\Includes\\glad\\glad.h",
+              "RelativeDocumentMoniker": "..\\OpenGL Dependents\\Includes\\glad\\glad.h",
+              "ToolTip": "F:\\CPP Projects\\OpenGL Dependents\\Includes\\glad\\glad.h",
+              "RelativeToolTip": "..\\OpenGL Dependents\\Includes\\glad\\glad.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-26T13:46:42.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "dllmain.cpp",
+              "DocumentMoniker": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\dllmain.cpp",
+              "RelativeDocumentMoniker": "GLMakesMeMad\\dllmain.cpp",
+              "ToolTip": "F:\\CPP Projects\\GLMakesMeMad\\GLMakesMeMad\\dllmain.cpp",
+              "RelativeToolTip": "GLMakesMeMad\\dllmain.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-26T13:34:31.092Z"
             }
           ]
         }
