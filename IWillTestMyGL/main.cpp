@@ -16,11 +16,7 @@ void OnInit()
 	vertices.push_back(GLVertex(Vector3(0.5f, 0.5f, 0.0f), Color(1.0f, 1.0f, 1.0f), Vector3(0.0f, 0.0f, 1.0f), Vector2(1.0f, 1.0f)));
 	vertices.push_back(GLVertex(Vector3(0.5f, -0.5f, 0.0f), Color(1.0f, 0.0f, 1.0f), Vector3(0.0f, 0.0f, 1.0f), Vector2(1.0f, 0.0f)));
 
-	std::vector<unsigned int> indices = 
-	{
-		0, 1, 2,
-		0, 2, 3
-	};
+	std::vector<unsigned int> indices = {0, 1, 2, 0, 2, 3};
 
 	mesh = new GLMesh(vertices, indices);
 }
