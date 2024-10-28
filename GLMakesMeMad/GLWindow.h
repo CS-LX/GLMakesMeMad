@@ -24,6 +24,8 @@ public:
     static void RegisterOnInit(EventCallback callback);
     static void RegisterOnRendering(EventCallback callback);
     static void RegisterOnClosing(EventCallback callback);
+    static void RegisterOnMouseMoving(std::function<void(float, float)> callback);
+    static void RegisterOnScrollRolling(std::function<void(float, float)> callback);
 
 private:
     //static void FramebufferSizeCallback(int width, int height);

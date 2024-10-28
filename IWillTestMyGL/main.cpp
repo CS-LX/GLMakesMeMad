@@ -33,11 +33,23 @@ void OnClosing()
 	delete mesh;
 }
 
+void OnMouseMoving(float xPos, float yPos)
+{
+	printf("mouse %f, %f\n", xPos, yPos);
+}
+
+void OnScrollRolling(float xOffset, float yOffset)
+{
+	printf("scroll %f, %f\n", xOffset, yOffset);
+}
+
 int main()
 {
 	GLWindow::RegisterOnInit(OnInit);
 	GLWindow::RegisterOnRendering(OnRendering);
 	GLWindow::RegisterOnClosing(OnClosing);
+	GLWindow::RegisterOnMouseMoving(OnMouseMoving);
+	GLWindow::RegisterOnScrollRolling(OnScrollRolling);
 	GLWindow::Init(800, 600, "AAA");
 
 	while (!GLWindow::ShouldClose())

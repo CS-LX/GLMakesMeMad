@@ -8,10 +8,26 @@ GLFWwindow* window;
 std::vector<GLWindow::EventCallback> onInitCallbacks;
 std::vector<GLWindow::EventCallback> renderingCallbacks;
 std::vector<GLWindow::EventCallback> closingCallbacks;
+std::vector<std::function<void(float, float)>> mouseMovingCallbacks;
+std::vector<std::function<void(float, float)>> scrollRollingCallbacks;
 
 void FramebufferSizeCallback(GLFWwindow* window, int width, int height)
 {
     glViewport(0, 0, width, height);
+}
+
+void MouseMoveCallback(GLFWwindow* window, double xPos, double yPos)
+{
+    for (auto& callback : mouseMovingCallbacks) {
+        callback(static_cast<float>(xPos), static_cast<float>(yPos));
+    }
+}
+
+void ScrollRollCallback(GLFWwindow* window, double xOffset, double yOffset)
+{
+    for (auto& callback : scrollRollingCallbacks) {
+        callback(static_cast<float>(xOffset), static_cast<float>(yOffset));
+    }
 }
 
 int GLWindow::Init(int width, int height, const std::string& windowName)
@@ -43,6 +59,8 @@ int GLWindow::Init(int width, int height, const std::string& windowName)
 
     // 设置帧缓冲大小回调
     glfwSetFramebufferSizeCallback(window, FramebufferSizeCallback);
+    glfwSetCursorPosCallback(window, MouseMoveCallback);
+    glfwSetScrollCallback(window, ScrollRollCallback);
 
     for (auto& callback : onInitCallbacks) {
         callback();
@@ -93,4 +111,14 @@ void GLWindow::RegisterOnRendering(EventCallback callback)
 void GLWindow::RegisterOnClosing(EventCallback callback)
 {
     closingCallbacks.push_back(callback);
+}
+
+void GLWindow::RegisterOnMouseMoving(std::function<void(float, float)> callback)
+{
+    mouseMovingCallbacks.push_back(callback);
+}
+
+void GLWindow::RegisterOnScrollRolling(std::function<void(float, float)> callback)
+{
+    scrollRollingCallbacks.push_back(callback);
 }
