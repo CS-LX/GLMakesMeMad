@@ -61,7 +61,26 @@ public:
 	static Matrix CreateTranslation(float x, float y, float z);
 	//从位移创建
 	static Matrix CreateTranslation(Vector3 position);
+	//转置
+	static Matrix Transpose(Matrix m);
+	//求逆
+	static Matrix Invert(Matrix m);
+	//线性插值
+	static Matrix Lerp(Matrix m1, Matrix m2, float f);
+	//矩阵乘法
+	static Matrix MultiplyRestricted(Matrix* m1, Matrix* m2);
+	//相等
+	bool Equals(Matrix other);
 
+	//运算符重载
+	bool operator ==(Matrix m2);
+	bool operator !=(Matrix m2);
+	Matrix operator +(Matrix m2);
+	Matrix operator -(Matrix m2);
+	Matrix operator *(Matrix m2);
+	Matrix operator *(float s);
+	Matrix operator /(Matrix m2);
+	Matrix operator /(float d);
 private:
 	void Init(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44);
 };

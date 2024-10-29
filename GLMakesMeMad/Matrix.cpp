@@ -211,6 +211,162 @@ Matrix Matrix::CreateTranslation(Vector3 position)
 	return Matrix(1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, position.x, position.y, position.z, 1.0f);
 }
 
+Matrix Matrix::Transpose(Matrix m)
+{
+	return Matrix(m.M11, m.M21, m.M31, m.M41, m.M12, m.M22, m.M32, m.M42, m.M13, m.M23, m.M33, m.M43, m.M14, m.M24, m.M34, m.M44);
+}
+
+Matrix Matrix::Invert(Matrix m)
+{
+	float m2 = m.M11;
+	float m3 = m.M12;
+	float m4 = m.M13;
+	float m5 = m.M14;
+	float m6 = m.M21;
+	float m7 = m.M22;
+	float m8 = m.M23;
+	float m9 = m.M24;
+	float m10 = m.M31;
+	float m11 = m.M32;
+	float m12 = m.M33;
+	float m13 = m.M34;
+	float m14 = m.M41;
+	float m15 = m.M42;
+	float m16 = m.M43;
+	float m17 = m.M44;
+	float num = (m12 * m17) - (m13 * m16);
+	float num2 = (m11 * m17) - (m13 * m15);
+	float num3 = (m11 * m16) - (m12 * m15);
+	float num4 = (m10 * m17) - (m13 * m14);
+	float num5 = (m10 * m16) - (m12 * m14);
+	float num6 = (m10 * m15) - (m11 * m14);
+	float num7 = (m7 * num) - (m8 * num2) + (m9 * num3);
+	float num8 = 0.0f - ((m6 * num) - (m8 * num4) + (m9 * num5));
+	float num9 = (m6 * num2) - (m7 * num4) + (m9 * num6);
+	float num10 = 0.0f - ((m6 * num3) - (m7 * num5) + (m8 * num6));
+	float num11 = 1.0f / ((m2 * num7) + (m3 * num8) + (m4 * num9) + (m5 * num10));
+	Matrix result = Matrix();
+	result.M11 = num7 * num11;
+	result.M21 = num8 * num11;
+	result.M31 = num9 * num11;
+	result.M41 = num10 * num11;
+	result.M12 = (0.0f - ((m3 * num) - (m4 * num2) + (m5 * num3))) * num11;
+	result.M22 = ((m2 * num) - (m4 * num4) + (m5 * num5)) * num11;
+	result.M32 = (0.0f - ((m2 * num2) - (m3 * num4) + (m5 * num6))) * num11;
+	result.M42 = ((m2 * num3) - (m3 * num5) + (m4 * num6)) * num11;
+	float num12 = (m8 * m17) - (m9 * m16);
+	float num13 = (m7 * m17) - (m9 * m15);
+	float num14 = (m7 * m16) - (m8 * m15);
+	float num15 = (m6 * m17) - (m9 * m14);
+	float num16 = (m6 * m16) - (m8 * m14);
+	float num17 = (m6 * m15) - (m7 * m14);
+	result.M13 = ((m3 * num12) - (m4 * num13) + (m5 * num14)) * num11;
+	result.M23 = (0.0f - ((m2 * num12) - (m4 * num15) + (m5 * num16))) * num11;
+	result.M33 = ((m2 * num13) - (m3 * num15) + (m5 * num17)) * num11;
+	result.M43 = (0.0f - ((m2 * num14) - (m3 * num16) + (m4 * num17))) * num11;
+	float num18 = (m8 * m13) - (m9 * m12);
+	float num19 = (m7 * m13) - (m9 * m11);
+	float num20 = (m7 * m12) - (m8 * m11);
+	float num21 = (m6 * m13) - (m9 * m10);
+	float num22 = (m6 * m12) - (m8 * m10);
+	float num23 = (m6 * m11) - (m7 * m10);
+	result.M14 = (0.0f - ((m3 * num18) - (m4 * num19) + (m5 * num20))) * num11;
+	result.M24 = ((m2 * num18) - (m4 * num21) + (m5 * num22)) * num11;
+	result.M34 = (0.0f - ((m2 * num19) - (m3 * num21) + (m5 * num23))) * num11;
+	result.M44 = ((m2 * num20) - (m3 * num22) + (m4 * num23)) * num11;
+	return result;
+}
+
+Matrix Matrix::Lerp(Matrix m1, Matrix m2, float f)
+{
+	m1.M11 += (m2.M11 - m1.M11) * f;
+	m1.M12 += (m2.M12 - m1.M12) * f;
+	m1.M13 += (m2.M13 - m1.M13) * f;
+	m1.M14 += (m2.M14 - m1.M14) * f;
+	m1.M21 += (m2.M21 - m1.M21) * f;
+	m1.M22 += (m2.M22 - m1.M22) * f;
+	m1.M23 += (m2.M23 - m1.M23) * f;
+	m1.M24 += (m2.M24 - m1.M24) * f;
+	m1.M31 += (m2.M31 - m1.M31) * f;
+	m1.M32 += (m2.M32 - m1.M32) * f;
+	m1.M33 += (m2.M33 - m1.M33) * f;
+	m1.M34 += (m2.M34 - m1.M34) * f;
+	m1.M41 += (m2.M41 - m1.M41) * f;
+	m1.M42 += (m2.M42 - m1.M42) * f;
+	m1.M43 += (m2.M43 - m1.M43) * f;
+	m1.M44 += (m2.M44 - m1.M44) * f;
+	return m1;
+}
+
+Matrix Matrix::MultiplyRestricted(Matrix* m1, Matrix* m2)
+{
+	Matrix result = Matrix();
+	result.M11 = (m1->M11 * m2->M11) + (m1->M12 * m2->M21) + (m1->M13 * m2->M31) + (m1->M14 * m2->M41);
+	result.M12 = (m1->M11 * m2->M12) + (m1->M12 * m2->M22) + (m1->M13 * m2->M32) + (m1->M14 * m2->M42);
+	result.M13 = (m1->M11 * m2->M13) + (m1->M12 * m2->M23) + (m1->M13 * m2->M33) + (m1->M14 * m2->M43);
+	result.M14 = (m1->M11 * m2->M14) + (m1->M12 * m2->M24) + (m1->M13 * m2->M34) + (m1->M14 * m2->M44);
+	result.M21 = (m1->M21 * m2->M11) + (m1->M22 * m2->M21) + (m1->M23 * m2->M31) + (m1->M24 * m2->M41);
+	result.M22 = (m1->M21 * m2->M12) + (m1->M22 * m2->M22) + (m1->M23 * m2->M32) + (m1->M24 * m2->M42);
+	result.M23 = (m1->M21 * m2->M13) + (m1->M22 * m2->M23) + (m1->M23 * m2->M33) + (m1->M24 * m2->M43);
+	result.M24 = (m1->M21 * m2->M14) + (m1->M22 * m2->M24) + (m1->M23 * m2->M34) + (m1->M24 * m2->M44);
+	result.M31 = (m1->M31 * m2->M11) + (m1->M32 * m2->M21) + (m1->M33 * m2->M31) + (m1->M34 * m2->M41);
+	result.M32 = (m1->M31 * m2->M12) + (m1->M32 * m2->M22) + (m1->M33 * m2->M32) + (m1->M34 * m2->M42);
+	result.M33 = (m1->M31 * m2->M13) + (m1->M32 * m2->M23) + (m1->M33 * m2->M33) + (m1->M34 * m2->M43);
+	result.M34 = (m1->M31 * m2->M14) + (m1->M32 * m2->M24) + (m1->M33 * m2->M34) + (m1->M34 * m2->M44);
+	result.M41 = (m1->M41 * m2->M11) + (m1->M42 * m2->M21) + (m1->M43 * m2->M31) + (m1->M44 * m2->M41);
+	result.M42 = (m1->M41 * m2->M12) + (m1->M42 * m2->M22) + (m1->M43 * m2->M32) + (m1->M44 * m2->M42);
+	result.M43 = (m1->M41 * m2->M13) + (m1->M42 * m2->M23) + (m1->M43 * m2->M33) + (m1->M44 * m2->M43);
+	result.M44 = (m1->M41 * m2->M14) + (m1->M42 * m2->M24) + (m1->M43 * m2->M34) + (m1->M44 * m2->M44);
+	return result;
+}
+
+bool Matrix::Equals(Matrix other)
+{
+	return M11 == other.M11 && M22 == other.M22 && M33 == other.M33 && M44 == other.M44 && M12 == other.M12 && M13 == other.M13 && M14 == other.M14 && M21 == other.M21 && M23 == other.M23 && M24 == other.M24 && M31 == other.M31 && M32 == other.M32 && M34 == other.M34 && M41 == other.M41 && M42 == other.M42 && M43 == other.M43;
+}
+
+bool Matrix::operator ==(Matrix m2)
+{
+	return this->Equals(m2);
+}
+
+bool Matrix::operator !=(Matrix m2)
+{
+	return !this->Equals(m2);
+}
+
+Matrix Matrix::operator +(Matrix m2)
+{
+	return Matrix(this->M11 + m2.M11, this->M12 + m2.M12, this->M13 + m2.M13, this->M14 + m2.M14, this->M21 + m2.M21, this->M22 + m2.M22, this->M23 + m2.M23, this->M24 + m2.M24, this->M31 + m2.M31, this->M32 + m2.M32, this->M33 + m2.M33, this->M34 + m2.M34, this->M41 + m2.M41, this->M42 + m2.M42, this->M43 + m2.M43, this->M44 + m2.M44);
+}
+
+Matrix Matrix::operator -(Matrix m2)
+{
+	return Matrix(this->M11 - m2.M11, this->M12 - m2.M12, this->M13 - m2.M13, this->M14 - m2.M14, this->M21 - m2.M21, this->M22 - m2.M22, this->M23 - m2.M23, this->M24 - m2.M24, this->M31 - m2.M31, this->M32 - m2.M32, this->M33 - m2.M33, this->M34 - m2.M34, this->M41 - m2.M41, this->M42 - m2.M42, this->M43 - m2.M43, this->M44 - m2.M44);
+}
+
+Matrix Matrix::operator *(Matrix m2)
+{
+	Matrix result = Matrix::MultiplyRestricted(this, &m2);
+	return result;
+}
+
+Matrix Matrix::operator *(float s)
+{
+	return Matrix(this->M11 * s, this->M12 * s, this->M13 * s, this->M14 * s, this->M21 * s, this->M22 * s, this->M23 * s, this->M24 * s, this->M31 * s, this->M32 * s, this->M33 * s, this->M34 * s, this->M41 * s, this->M42 * s, this->M43 * s, this->M44 * s);
+}
+
+Matrix Matrix::operator /(Matrix m2)
+{
+	return Matrix(this->M11 / m2.M11, this->M12 / m2.M12, this->M13 / m2.M13, this->M14 / m2.M14, this->M21 / m2.M21, this->M22 / m2.M22, this->M23 / m2.M23, this->M24 / m2.M24, this->M31 / m2.M31, this->M32 / m2.M32, this->M33 / m2.M33, this->M34 / m2.M34, this->M41 / m2.M41, this->M42 / m2.M42, this->M43 / m2.M43, this->M44 / m2.M44);
+}
+
+Matrix Matrix::operator /(float d)
+{
+	float num = 1.0f / d;
+	return Matrix(this->M11 * num, this->M12 * num, this->M13 * num, this->M14 * num, this->M21 * num, this->M22 * num, this->M23 * num, this->M24 * num, this->M31 * num, this->M32 * num, this->M33 * num, this->M34 * num, this->M41 * num, this->M42 * num, this->M43 * num, this->M44 * num);
+}
+
 void Matrix::Init(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44)
 {
 	this->M11 = m11;
