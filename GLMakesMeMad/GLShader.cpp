@@ -133,3 +133,13 @@ void GLShader::SetMatrix(const std::string& name, float* value)
 {
     glUniformMatrix4fv(GetUniformLocation(name), 1, GL_FALSE, value);
 }
+void GLShader::SetMatrix(const std::string& name, Matrix matrix, bool transpose)
+{
+    float values[16] = {
+        matrix.M11, matrix.M12, matrix.M13, matrix.M14,
+        matrix.M21, matrix.M22, matrix.M23, matrix.M24,
+        matrix.M31, matrix.M32, matrix.M33, matrix.M34,
+        matrix.M41, matrix.M42, matrix.M43, matrix.M44
+    };
+    glUniformMatrix4fv(GetUniformLocation(name), 1, transpose ? GL_TRUE : GL_FALSE, values);
+}

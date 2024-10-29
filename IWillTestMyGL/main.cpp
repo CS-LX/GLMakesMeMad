@@ -4,6 +4,7 @@
 #include "Vector3.h"
 #include "GLVertex.h"
 #include <iostream>
+#include <windows.h>
 
 GLShader* shader;
 GLMesh* mesh;
@@ -23,7 +24,11 @@ void OnInit()
 
 void OnRendering()
 {
+	DWORD milliseconds = GetTickCount64();
+	milliseconds %= 10000;
+	Matrix m = Matrix::CreateFromAxisAngle(Vector3(1, 0, 1), static_cast<float>(milliseconds) / 1000.0f);
 	shader->Use();
+	shader->SetMatrix("u_Matrix", m);
 	mesh->Flush();
 }
 

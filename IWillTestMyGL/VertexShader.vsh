@@ -10,10 +10,12 @@ out vec2 TexCoord;
 out vec4 VerColor;
 out vec3 VerNormal;
 
+uniform mat4 u_Matrix;
+
 
 void main()
 {
-    gl_Position = vec4(aPos, 1.0);
+    gl_Position = u_Matrix * vec4(aPos, 1.0);
     VerColor = aColor;
     TexCoord = aTexCoord;
     VerNormal = aNormal;

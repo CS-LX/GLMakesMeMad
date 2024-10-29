@@ -8,6 +8,7 @@
 #include "Vector3.h"
 #include "Vector2.h"
 #include <string>
+#include "Matrix.h"
 
 #pragma once
 class DLL_API GLShader
@@ -34,6 +35,7 @@ public:
     void SetVector3(const std::string& name, Vector3 vector3) const;
     void SetVector4(const std::string& name, float x, float y, float z, float w) const;
     void SetMatrix(const std::string& name, float* value);
+    void SetMatrix(const std::string& name, Matrix value, bool transpose = false);
 
 private:
     int GetUniformLocation(const std::string& name) const;
