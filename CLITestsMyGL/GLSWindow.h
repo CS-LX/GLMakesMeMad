@@ -9,6 +9,7 @@ public ref class GLSWindow
 {
 public:
     delegate void EventDelegate();
+    delegate void Vector2Delegate(float x, float y);
     static int Init(int width, int height, System::String^ name);
     static void Render();
     static void Close();
@@ -17,5 +18,7 @@ public:
     static void RegisterOnInit(EventDelegate^ callback);
     static void RegisterOnRendering(EventDelegate^ callback);
     static void RegisterOnClosing(EventDelegate^ callback);
+    static void RegisterOnMouseMoving(Vector2Delegate^ callback);
+    static void RegisterOnScrollRolling(Vector2Delegate^ callback);
 };
 

@@ -9,6 +9,8 @@
             GLSWindow.RegisterOnInit(OnInit);
             GLSWindow.RegisterOnRendering(OnRender);
             GLSWindow.RegisterOnClosing(OnClose);
+            GLSWindow.RegisterOnMouseMoving(OnMouseMoving);
+            GLSWindow.RegisterOnScrollRolling(OnScrollRolling);
             GLSWindow.Init(800, 800, "CSharpOpneGL");
 
             while (!GLSWindow.ShouldClose())
@@ -41,6 +43,16 @@
         static void OnClose()
         {
             Console.WriteLine("Close");
+        }
+
+        static void OnMouseMoving(float x, float y)
+        {
+            Console.WriteLine(x + " " + y);
+        }
+
+        static void OnScrollRolling(float x, float y)
+        {
+            Console.WriteLine(x + " " + y);
         }
     }
 }

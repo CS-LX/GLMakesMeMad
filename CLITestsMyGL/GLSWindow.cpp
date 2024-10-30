@@ -56,3 +56,21 @@ void GLSWindow::RegisterOnClosing(EventDelegate^ callback)
         };
     GLWindow::RegisterOnClosing(nativeCallback);
 }
+
+void GLSWindow::RegisterOnMouseMoving(Vector2Delegate^ callback)
+{
+    msclr::gcroot<Vector2Delegate^> safeCallback = callback;
+    auto nativeCallback = [safeCallback](float x, float y) {
+        safeCallback->Invoke(x, y);
+        };
+    GLWindow::RegisterOnMouseMoving(nativeCallback);
+}
+
+void GLSWindow::RegisterOnScrollRolling(Vector2Delegate^ callback)
+{
+    msclr::gcroot<Vector2Delegate^> safeCallback = callback;
+    auto nativeCallback = [safeCallback](float x, float y) {
+        safeCallback->Invoke(x, y);
+        };
+    GLWindow::RegisterOnScrollRolling(nativeCallback);
+}
