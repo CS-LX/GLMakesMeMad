@@ -35,7 +35,12 @@
 
         static void OnRender()
         {
+            SMatrix m1 = SMatrix.CreateScale(0.8f, 1.5f, 1.0f);
+            SMatrix m2 = SMatrix.CreateRotationZ(3.1415926f / 4.0f);
+            SMatrix m3 = SMatrix.CreateTranslation(0, 1, 0);
+            m2 = m2 * m3;
             shader.Use();
+            shader.SetMatrix("u_matrix", SMatrix.Lerp(m1, m2, MathF.Sin(DateTime.Now.Millisecond / 1000f * 0.5f + 0.5f)), false);
             mesh.Flush();
         }
 

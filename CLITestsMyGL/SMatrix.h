@@ -5,12 +5,13 @@
 public ref struct SMatrix
 {
 private:
-    Matrix* nativeMatrix;
     SMatrix(const Matrix& matrix);
     !SMatrix();
 
 
 public:
+
+    Matrix* nativeMatrix;
     // ¹¹Ôìº¯Êý
     SMatrix();
     SMatrix(float m11, float m12, float m13, float m14,
