@@ -322,7 +322,7 @@ Matrix Matrix::MultiplyRestricted(Matrix* m1, Matrix* m2)
 
 bool Matrix::Equals(Matrix other)
 {
-	return M11 == other.M11 && M22 == other.M22 && M33 == other.M33 && M44 == other.M44 && M12 == other.M12 && M13 == other.M13 && M14 == other.M14 && M21 == other.M21 && M23 == other.M23 && M24 == other.M24 && M31 == other.M31 && M32 == other.M32 && M34 == other.M34 && M41 == other.M41 && M42 == other.M42 && M43 == other.M43;
+	return this->M11 == other.M11 && this->M22 == other.M22 && this->M33 == other.M33 && this->M44 == other.M44 && this->M12 == other.M12 && this->M13 == other.M13 && this->M14 == other.M14 && this->M21 == other.M21 && this->M23 == other.M23 && this->M24 == other.M24 && this->M31 == other.M31 && this->M32 == other.M32 && this->M34 == other.M34 && this->M41 == other.M41 && this->M42 == other.M42 && this->M43 == other.M43;
 }
 
 bool Matrix::operator ==(Matrix m2)
