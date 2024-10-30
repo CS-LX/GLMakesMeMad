@@ -139,11 +139,17 @@
     <ClInclude Include="GLSMesh.h" />
     <ClInclude Include="GLSShader.h" />
     <ClInclude Include="GLSWindow.h" />
+    <ClInclude Include="SMatrix.h" />
+    <ClInclude Include="SVector2.h" />
+    <ClInclude Include="SVector3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GLSMesh.cpp" />
     <ClCompile Include="GLSShader.cpp" />
     <ClCompile Include="GLSWindow.cpp" />
+    <ClCompile Include="SMatrix.cpp" />
+    <ClCompile Include="SVector2.cpp" />
+    <ClCompile Include="SVector3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
