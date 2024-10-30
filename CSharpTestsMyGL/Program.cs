@@ -12,7 +12,6 @@
             GLSWindow.RegisterOnMouseMoving(OnMouseMoving);
             GLSWindow.RegisterOnScrollRolling(OnScrollRolling);
             GLSWindow.Init(800, 800, "CSharpOpneGL");
-
             while (!GLSWindow.ShouldClose())
             {
                 GLSWindow.Render();
