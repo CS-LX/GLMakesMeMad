@@ -35,3 +35,18 @@ void SColor::Init(float r, float g, float b, float a)
 	this->b = b;
 	this->a = a;
 }
+
+bool SColor::Equals(SColor other)
+{
+	return this->r == other.r && this->g == other.g && this->b == other.b && this->a == other.a;
+}
+
+bool SColor::operator ==(SColor a, SColor b)
+{
+	return a.r == b.r && a.g == b.g && a.b == b.b && a.a == b.a;
+}
+
+bool SColor::operator !=(SColor a, SColor b)
+{
+	return !(a == b);
+}

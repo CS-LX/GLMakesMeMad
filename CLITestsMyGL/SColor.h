@@ -12,6 +12,12 @@ public:
 	SColor(float r, float g, float b);
 	SColor(int r, int g, int b);
 
+	//ПаµИ
+	bool Equals(SColor other);
+
+	static bool operator ==(SColor a, SColor b);
+	static bool operator !=(SColor a, SColor b);
+
 private:
 	void Init(float r, float g, float b, float a);
 };
