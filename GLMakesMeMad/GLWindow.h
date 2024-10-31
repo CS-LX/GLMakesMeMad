@@ -18,6 +18,8 @@ public:
     static void Render();
     static void Close();
     static bool ShouldClose();
+    static int GetWidth();
+    static int GetHeight();
 
 
     // 事件注册方法

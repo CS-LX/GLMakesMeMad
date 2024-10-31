@@ -5,6 +5,8 @@
 #include <vector>
 
 GLFWwindow* window;
+int windowWidth;
+int windowHeight;
 std::vector<GLWindow::EventCallback> onInitCallbacks;
 std::vector<GLWindow::EventCallback> renderingCallbacks;
 std::vector<GLWindow::EventCallback> closingCallbacks;
@@ -13,6 +15,8 @@ std::vector<std::function<void(float, float)>> scrollRollingCallbacks;
 
 void FramebufferSizeCallback(GLFWwindow* window, int width, int height)
 {
+    windowWidth = width;
+    windowHeight = height;
     glViewport(0, 0, width, height);
 }
 
@@ -42,6 +46,8 @@ int GLWindow::Init(int width, int height, const std::string& windowName)
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     window = glfwCreateWindow(width, height, windowName.c_str(), NULL, NULL);
+    windowWidth = width;
+    windowHeight = height;
     if (!window) {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
@@ -121,4 +127,14 @@ void GLWindow::RegisterOnMouseMoving(std::function<void(float, float)> callback)
 void GLWindow::RegisterOnScrollRolling(std::function<void(float, float)> callback)
 {
     scrollRollingCallbacks.push_back(callback);
+}
+
+int GLWindow::GetWidth()
+{
+    return windowWidth;
+}
+
+int GLWindow::GetHeight()
+{
+    return windowHeight;
 }

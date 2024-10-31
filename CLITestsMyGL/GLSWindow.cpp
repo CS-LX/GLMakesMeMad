@@ -74,3 +74,13 @@ void GLSWindow::RegisterOnScrollRolling(Vector2Delegate^ callback)
         };
     GLWindow::RegisterOnScrollRolling(nativeCallback);
 }
+
+int GLSWindow::GetWidth()
+{
+    return GLWindow::GetWidth();
+}
+
+int GLSWindow::GetHeight()
+{
+    return GLWindow::GetHeight();
+}

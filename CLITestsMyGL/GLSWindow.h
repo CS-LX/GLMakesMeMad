@@ -14,6 +14,8 @@ public:
     static void Render();
     static void Close();
     static bool ShouldClose();
+    static int GetWidth();
+    static int GetHeight();
 
     static void RegisterOnInit(EventDelegate^ callback);
     static void RegisterOnRendering(EventDelegate^ callback);
