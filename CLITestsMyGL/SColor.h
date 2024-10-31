@@ -18,6 +18,8 @@ public:
 	static bool operator ==(SColor a, SColor b);
 	static bool operator !=(SColor a, SColor b);
 
+	virtual System::String^ ToString() override;
+
 private:
 	void Init(float r, float g, float b, float a);
 };

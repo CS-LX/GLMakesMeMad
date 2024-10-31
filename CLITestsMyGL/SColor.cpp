@@ -50,3 +50,8 @@ bool SColor::operator !=(SColor a, SColor b)
 {
 	return !(a == b);
 }
+
+System::String^ SColor::ToString()
+{
+	return System::String::Format("({0}, {1}, {2}, {3})", r, g, b, a);
+}
