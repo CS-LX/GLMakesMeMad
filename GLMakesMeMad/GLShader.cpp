@@ -121,9 +121,17 @@ void GLShader::SetVector2(const std::string& name, Vector2 vector2) const
 {
     glUniform2f(GetUniformLocation(name), vector2.x, vector2.y);
 }
+void GLShader::SetVector2(const std::string& name, float x, float y) const
+{
+    glUniform2f(GetUniformLocation(name), x, y);
+}
 void GLShader::SetVector3(const std::string& name, Vector3 vector3) const
 {
     glUniform3f(GetUniformLocation(name), vector3.x, vector3.y, vector3.z);
+}
+void GLShader::SetVector3(const std::string& name, float x, float y, float z) const
+{
+    glUniform3f(GetUniformLocation(name), x, y, z);
 }
 void GLShader::SetVector4(const std::string& name, float x, float y, float z, float w) const
 {
@@ -140,6 +148,16 @@ void GLShader::SetMatrix(const std::string& name, Matrix matrix, bool transpose)
         matrix.M21, matrix.M22, matrix.M23, matrix.M24,
         matrix.M31, matrix.M32, matrix.M33, matrix.M34,
         matrix.M41, matrix.M42, matrix.M43, matrix.M44
+    };
+    glUniformMatrix4fv(GetUniformLocation(name), 1, transpose ? GL_TRUE : GL_FALSE, values);
+}
+void GLShader::SetMatrix(const std::string& name, float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44, bool transpose)
+{
+    float values[16] = {
+        m11, m12, m13, m14,
+        m21, m22, m23, m24,
+        m31, m32, m33, m34,
+        m41, m42, m43, m44
     };
     glUniformMatrix4fv(GetUniformLocation(name), 1, transpose ? GL_TRUE : GL_FALSE, values);
 }

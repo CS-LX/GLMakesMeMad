@@ -32,10 +32,13 @@ public:
     void SetInt(const std::string& name, int value) const;
     void SetFloat(const std::string& name, float value) const;
     void SetVector2(const std::string& name, Vector2 vector2) const;
+    void SetVector2(const std::string& name, float x, float y) const;
     void SetVector3(const std::string& name, Vector3 vector3) const;
+    void SetVector3(const std::string& name, float x, float y, float z) const;
     void SetVector4(const std::string& name, float x, float y, float z, float w) const;
     void SetMatrix(const std::string& name, float* value);
     void SetMatrix(const std::string& name, Matrix value, bool transpose = false);
+    void SetMatrix(const std::string& name, float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44, bool transpose = false);
 
 private:
     int GetUniformLocation(const std::string& name) const;

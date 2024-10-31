@@ -41,12 +41,12 @@ void GLSShader::SetFloat(System::String^ name, float value)
 
 void GLSShader::SetVector2(System::String^ name, SVector2^ vector2)
 {
-	shader->SetVector2(marshal_as<std::string>(name), *(vector2->vector2));
+	shader->SetVector2(marshal_as<std::string>(name), vector2->x, vector2->y);
 }
 
 void GLSShader::SetVector3(System::String^ name, SVector3^ vector3)
 {
-	shader->SetVector3(marshal_as<std::string>(name), *(vector3->vector3));
+	shader->SetVector3(marshal_as<std::string>(name), vector3->x, vector3->y, vector3->z);
 }
 
 void GLSShader::SetVector4(System::String^ name, float x, float y, float z, float w)

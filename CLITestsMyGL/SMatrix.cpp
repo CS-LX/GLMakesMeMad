@@ -48,7 +48,7 @@ SMatrix^ SMatrix::Zero()
 // 静态方法 - 从轴角创建矩阵
 SMatrix^ SMatrix::CreateFromAxisAngle(SVector3^ axis, float angle)
 {
-    return gcnew SMatrix(Matrix::CreateFromAxisAngle(*axis->vector3, angle));
+    return gcnew SMatrix(Matrix::CreateFromAxisAngle(Vector3(axis->x, axis->y, axis->z), angle));
 }
 
 // 静态方法 - 创建正交矩阵

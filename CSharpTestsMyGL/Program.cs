@@ -4,6 +4,7 @@
     {
         public static GLSShader shader;
         public static GLSMesh mesh;
+
         static void Main(string[] args)
         {
             GLSWindow.RegisterOnInit(OnInit);
@@ -39,6 +40,7 @@
             SMatrix m2 = SMatrix.CreateRotationZ(3.1415926f / 4.0f);
             SMatrix m3 = SMatrix.CreateTranslation(0, 1, 0);
             m2 = m2 * m3;
+
             shader.Use();
             shader.SetMatrix("u_matrix", SMatrix.Lerp(m1, m2, MathF.Sin(DateTime.Now.Millisecond / 1000f * 0.5f + 0.5f)), false);
             mesh.Flush();
