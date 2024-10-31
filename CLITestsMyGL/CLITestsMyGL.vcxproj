@@ -138,7 +138,9 @@
   <ItemGroup>
     <ClInclude Include="GLSMesh.h" />
     <ClInclude Include="GLSShader.h" />
+    <ClInclude Include="GLSVertex.h" />
     <ClInclude Include="GLSWindow.h" />
+    <ClInclude Include="SColor.h" />
     <ClInclude Include="SMatrix.h" />
     <ClInclude Include="SVector2.h" />
     <ClInclude Include="SVector3.h" />
@@ -146,7 +148,9 @@
   <ItemGroup>
     <ClCompile Include="GLSMesh.cpp" />
     <ClCompile Include="GLSShader.cpp" />
+    <ClCompile Include="GLSVertex.cpp" />
     <ClCompile Include="GLSWindow.cpp" />
+    <ClCompile Include="SColor.cpp" />
     <ClCompile Include="SMatrix.cpp" />
     <ClCompile Include="SVector2.cpp" />
     <ClCompile Include="SVector3.cpp" />

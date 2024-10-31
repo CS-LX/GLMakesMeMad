@@ -24,11 +24,11 @@
         static void OnInit()
         {
             shader = new GLSShader(File.ReadAllText("VertexShader.vsh"), File.ReadAllText("FragmentShader.psh"));
-            float[] vertices = [
-                -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f, 1.0f,  0.0f, 0.0f, 1.0f,  0.0f, 0.0f,
-                -0.5f,  0.5f, 0.0f,  0.0f, 1.0f, 1.0f, 1.0f,  0.0f, 0.0f, 1.0f,  0.0f, 1.0f,
-                 0.5f,  0.5f, 0.0f,  1.0f, 1.0f, 1.0f, 1.0f,  0.0f, 0.0f, 1.0f,  1.0f, 1.0f,
-                 0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 1.0f, 1.0f,  0.0f, 0.0f, 1.0f,  1.0f, 0.0f
+            GLSVertex[] vertices = [
+                new GLSVertex(new SVector3(-0.5f, -0.5f, 0.0f),  new SColor(0.0f, 0.0f, 1.0f, 1.0f),  new SVector3(0.0f, 0.0f, 1.0f),  new SVector2(0.0f, 0.0f)),
+                new GLSVertex(new SVector3(-0.5f,  0.5f, 0.0f),  new SColor(0.0f, 1.0f, 1.0f, 1.0f),  new SVector3(0.0f, 0.0f, 1.0f),  new SVector2(0.0f, 1.0f)),
+                new GLSVertex(new SVector3( 0.5f,  0.5f, 0.0f),  new SColor(1.0f, 1.0f, 1.0f, 1.0f),  new SVector3(0.0f, 0.0f, 1.0f),  new SVector2(1.0f, 1.0f)),
+                new GLSVertex(new SVector3( 0.5f, -0.5f, 0.0f),  new SColor(1.0f, 0.0f, 1.0f, 1.0f),  new SVector3(0.0f, 0.0f, 1.0f),  new SVector2(1.0f, 0.0f))
             ];
             uint[] indices = [0, 1, 2, 0, 2, 3];
             mesh = new GLSMesh(vertices, indices);
@@ -36,13 +36,8 @@
 
         static void OnRender()
         {
-            SMatrix m1 = SMatrix.CreateScale(0.8f, 1.5f, 1.0f);
-            SMatrix m2 = SMatrix.CreateRotationZ(3.1415926f / 4.0f);
-            SMatrix m3 = SMatrix.CreateTranslation(0, 1, 0);
-            m2 = m2 * m3;
-
             shader.Use();
-            shader.SetMatrix("u_matrix", SMatrix.Lerp(m1, m2, MathF.Sin(DateTime.Now.Millisecond / 1000f * 0.5f + 0.5f)), false);
+            shader.SetMatrix("u_matrix", SMatrix.Identity(), false);
             mesh.Flush();
         }
 
